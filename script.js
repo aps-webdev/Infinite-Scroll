@@ -66,7 +66,6 @@ async function getPhotos() {
     photosArray = await response.json();
     displayPhotos();
     if (initialLoad) {
-      debugger;
       initialLoad = false;
       callAPIWithNewCount(25);
     }
